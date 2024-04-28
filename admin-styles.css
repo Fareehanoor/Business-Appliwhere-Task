@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px; /* Reduced container width */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Added padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: calc(100% - 20px); /* Adjusted input width */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width button */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Specific Styles for Admin Forms */
+.admin-form {
+    width: 50%; /* Half width of the container */
+    margin: 0 auto; /* Center the form */
+}
+
+.admin-form .form-group {
+    margin-bottom: 20px;
+}
+
+.admin-form label {
+    font-weight: bold;
+}
+
+.admin-form textarea {
+    height: 120px;
+}
+
+.admin-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: center;
+    width: 100%; /* Full width select */
+}
+
+.admin-form select:focus {
+    border-color: #4CAF50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-form {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}

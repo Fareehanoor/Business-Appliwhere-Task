@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Business Information Appliwhere</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <!-- Add City and Towns Form -->
+    <section class="admin-form">
+        <h2>Add City and Towns</h2>
+        <form>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town" required>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Add Business Category Form -->
+    <section class="admin-form">
+        <h2>Add Business Category</h2>
+        <form>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <!-- Add Business Profile Form -->
+    <section class="admin-form">
+        <h2>Add Business Profile</h2>
+        <form>
+            <label for="business-name">Business Name:</label>
+            <input type="text" id="business-name" name="business-name" required>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="restaurants">Restaurants</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="schools">Schools</option>
+                <option value="clinics">Clinics</option>
+                <option value="law-firms">Law Firms</option>
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town" required>
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website">
+            <label for="social-media">Social Media Links:</label>
+            <input type="text" id="social-media" name="social-media">
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
